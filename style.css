@@ -1,0 +1,490 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Using Inter font as per instructions */
+    background-color: #e9e9e9; /* Light background for contrast */
+}
+section {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.Project-Section{
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*About me Section */
+.about-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  margin-top: 15px;  
+  max-width: 75%;
+  height: auto;
+  border-radius: 10px;
+}
+.cv-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 80px;
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cv-button:hover {
+  background-color: #666;
+  transform: translateY(-2px);
+}
+
+.cv-button:active {
+  background-color: #888;
+  transform: translateY(1px);
+}
+.navbar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(68, 68, 68);
+    box-sizing: border-box;
+    padding: 20px 0 10px 0;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.navbar ul li:last-child {
+    margin-bottom: 0;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(90, 90, 90);
+    transform: scale(1.02);
+}
+
+.navbar ul li a:active {
+    background-color: rgb(110, 110, 110);
+    transform: scale(0.98);
+}
+
+.social-links {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.social-links a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+    display: block;
+}
+/* Main Content Area */
+.content {
+    margin-left: 200px;
+    padding: 30px;
+    color: #333;
+    line-height: 1.6;
+}
+.content h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+.content h2 {
+    color: #34495e;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-top: 0px; 
+}
+.content p {
+    margin-bottom: 15px;
+}
+
+/* Project Cards Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    max-width: 900px; /* Max width to ensure no more than 3 columns */
+    margin: 20px auto; /* Center the grid */
+    gap: 25px; /* Space between project cards */
+    margin-top: 20px;
+}
+.project-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push button to bottom */
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.project-card img {
+    width: 100%;
+    height: 180px;              /* keep consistent 16:9-ish strip */
+    object-fit: contain;        /* show the whole image */
+    background-color: #00000000;     /* black bars for unused space */
+    border-bottom: 1px solid #eee;
+}
+.project-card-content {
+    padding: 20px;
+    flex-grow: 1; /* Allow content to take up available space */
+}
+.project-card h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 8px; /* Adjusted margin to make space for tags */
+    font-size: 1.4em;
+}
+/* Project Tags on Cards */
+.project-tags-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px; /* Reduced gap */
+    margin-bottom: 8px; /* Reduced margin */
+}
+.project-tag-card {
+    padding: 3px 6px; /* Reduced padding */
+    border-radius: 4px; /* Adjusted border-radius */
+    font-size: 0.75em; /* Reduced font-size */
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+}
+.project-card p {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+.project-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center; /* Center the button horizontally */
+    margin-bottom: 20px; /* Space from the bottom of the card */
+}
+.project-card button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+.project-card button:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Higher than navbar */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+.modal-content {
+    background-color: #eeeeee;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    max-width: 800px; /* Max width for modal content */
+    width: 90%; /* Responsive width */
+    max-height: 90vh; /* Max height to prevent overflow */
+    overflow-y: auto; /* Enable scrolling for long content */
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+.modal-close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.modal-close-button:hover {
+    color: #333;
+}
+.modal-content h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-top: 0; /* Override content h2 padding */
+}
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #eee;
+}
+.carousel-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-image {
+   width: 100%;
+    height: 100%;
+    object-fit: contain;      /* was cover */
+    flex-shrink: 0;
+    background-color: #000;   
+}
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 10;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+.carousel-arrow.left {
+    left: 10px;
+}
+.carousel-arrow.right {
+    right: 10px;
+}
+.carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* Carousel Dots Styles */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.dot.active {
+    background-color: #777;
+    transform: scale(1.2);
+}
+/* Project Tags in Modal & Cards (Dynamic Coloring) */
+.modal-project-tags,
+.project-tags-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px; /* Adjusted gap for modal tags */
+    margin-bottom: 15px; /* Adjusted margin for modal tags */
+    justify-content: center; /* Center tags horizontally */
+}
+.project-tags-card { /* Specific adjustments for card tags */
+    margin-bottom: 8px;
+    justify-content: flex-start; /* Align left on cards */
+}
+.modal-project-tag,
+.project-tag-card {
+    padding: 4px 8px; /* Reduced padding for modal tags */
+    border-radius: 5px; /* Adjusted border-radius for modal tags */
+    font-size: 0.8em; /* Reduced font-size for modal tags */
+    font-weight: 500;
+    text-transform: capitalize; /* Capitalize first letter of each word */
+    border: 1px solid transparent;
+}
+/* Extra Projects Section headers (no longer needed for individual categories in All Projects) */
+.all-projects-section h3 {
+    color: #34495e;
+    margin-top: 40px; /* Space above each category header */
+    margin-bottom: 15px;
+    padding-top: 0; /* Ensures no extra padding at the top, overriding default h2 padding */
+}
+/* Filter Bar Styles */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px auto; /* Center with the project grid */
+    max-width: 900px; /* Match project grid width */
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.filter-button {
+    background-color: #f8f9fa;
+    color: #495057;
+    border: 1px solid #ced4da;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+.filter-button:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+.filter-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+}
+#modalProjectLongDescription {
+    white-space: pre-line;
+}
+.modal-link-button {
+    display: inline-block; /* Allows padding and margin */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px; /* Add some space around the buttons */
+}
+.modal-link-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+.modal-link-button:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+.project-links {
+    text-align: center; /* Center the buttons within their container */
+    margin-top: 20px; /* Space above the buttons */
+}
+.social-links a {
+    color: black;       /* make icons black */
+    text-decoration: none; /* remove underline if browser adds it */
+}
+.social-links a:hover {
+    color: #555;        /* dark gray on hover */
+}

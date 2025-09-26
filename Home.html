@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+     <nav class="navbar">
+        <!-- Main Navigation Links -->
+        <ul>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/bouke-weel-b54591207/" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/boukeweel" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://itch.io/profile/boukeweel" target="_blank" aria-label="Itch.io">
+              <i class="fab fa-itch-io"></i>
+            </a>
+            <a href="mailto:BoukeWeel@outlook.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="content">
+
+        <section>
+            <h1>Hello and welcome! </h1>
+            <p>
+                You have reached my portfolio. I am a Game Programmer who enjoys coding on multiple engines and languages. 
+                Lately, I have been most interested in learning C++, but I enjoy working on any kind of project.
+            </p>
+        </section>
+
+        <section class ="Project-Section">
+            <h1 id="projects-section">Projects</h1>
+            <p>Check out some of my recent work, or projects I'm most proud of!</p>
+
+            <!-- Main PROJECT CARDS CONTAINER (will be populated by JS)-->
+            <div class="project-grid" id="highlighted-projects-container">
+                <!-- Project cards will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h1 id="about-section">About me</h1>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="GeneralResources/Headshot.jpg" alt="Bouke Weel portrait">
+                    <a href="GeneralResources/CV_BoukeWeel_Public.pdf" target="_blank" class="cv-button">View CV</a>
+                </div>
+                <div class="about-text">
+                    <h2 id="about-section">Bouke Weel</h2>
+                    <p>I found game development for the first time when a friend showed me GameMaker Studio. I got interested in it because I always had an interest in gaming. Years later, when I was in IT class in high school, I was introduced to GameMaker Studio again. That’s when I started experimenting.</p>
+                    <p>I decided to continue with this interest and enrolled at Graphic Lyceum Utrecht, where I followed the game development course. There, I learned the basics of programming and game creation in Unity. After finishing this school, I realized I wanted to keep learning, so I decided to continue with the Howest DAE Game Development course, which was more focused on C++ programming.</p>
+                    <p>I have found my passion in game development and wish to keep working on games in the future.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1 id="contact-section">Contact</h1>
+            <p>
+                <i class="fas fa-envelope"></i>
+                <span id="contact-section">BoukeWeel@outlook.com</span>
+            </p>
+
+            <h3>More Ways to reach out</h3>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bouke-weel-b54591207/" target="_blank" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/boukeweel" target="_blank" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://itch.io/profile/boukeweel" target="_blank" aria-label="Itch.io">
+                  <i class="fab fa-itch-io"></i>
+                </a>
+                <a href="mailto:BoukeWeel@outlook.com" aria-label="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <!--All projects Section-->
+            <div class="all-projects-section" id="all-projects-section-container">
+                <h1 id="all-projects-heading">All Projects</h1>
+            
+                <!-- Filter Bar (will be populated by JS) -->
+                <div class="filter-bar">
+                    <button class="filter-button active" data-filter="all">Show All</button>
+                    <!-- Tag filter buttons will be dynamically inserted here by JavaScript -->
+                </div>
+            
+                <div id="all-projects-grid" class="project-grid">
+                    <!-- All projects will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Project Modal Structure -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close-button" id="closeModalBtn">&times;</button>
+            <h2 id="modalProjectTitle"></h2>
+
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="modalCarouselTrack">
+                    <!-- Images will be dynamically inserted here by JavaScript -->
+                </div>
+                <button class="carousel-arrow left" id="prevImageBtn">&#10094;</button> <!-- Left arrow -->
+                <button class="carousel-arrow right" id="nextImageBtn">&#10095;</button> <!-- Right arrow -->
+            </div>
+
+            <!-- Carousel Dots Container -->
+            <div class="carousel-dots" id="carouselDotsContainer">
+                <!-- Dots will be dynamically inserted here by JavaScript -->
+            </div>
+
+            <!-- Project Tags in Modal -->
+            <div class="modal-project-tags" id="modalProjectTags">
+                <!-- Tags will be dynamically inserted here by JavaScript -->
+            </div>
+
+            <p id="modalProjectLongDescription"></p>
+            <div id="modalLinks" class="project-links"></div>
+        </div>
+    </div>
+
+
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
