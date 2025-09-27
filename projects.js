@@ -103,7 +103,7 @@ export const PROJECTS_MASTER_LIST = [
             "Images/GOAPSurvivalAgent/Pic1.gif",
             "Images/GOAPSurvivalAgent/Pic2.gif",
             "Images/GOAPSurvivalAgent/Pic3.gif",
-            "Images/GOAPSurvivalAgent/Pic4.gif",z
+            "Images/GOAPSurvivalAgent/Pic4.gif",
         ],
         "description": "A agent made to survive as long as posible made with Goal Oriented Action Planning",
         "longDescription": `
