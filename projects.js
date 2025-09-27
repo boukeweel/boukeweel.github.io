@@ -97,7 +97,7 @@ export const PROJECTS_MASTER_LIST = [
     },
     {
         "id": "GOAP-Survival-Agent",
-        "title": "GOAP Survival Agent",
+        "title": "GOAP Survival Agent", 
         "cardImage": "Images/GOAPSurvivalAgent/Main.png",
         "images": [
             "Images/GOAPSurvivalAgent/Pic1.gif",
