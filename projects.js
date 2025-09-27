@@ -148,11 +148,11 @@ export const PROJECTS_MASTER_LIST = [
         "title": "PlayGroundVR",
         "cardImage": "Images/VRPlayground/pic1.jpg",
         "images": [
-            "Images/VRPlayground/pic1.png",
-            "Images/VRPlayground/pic2.png",
-            "Images/VRPlayground/pic3.png",
-            "Images/VRPlayground/pic4.png",
-            "Images/VRPlayground/pic5.png",
+            "Images/VRPlayground/Pic1.png",
+            "Images/VRPlayground/Pic2.png",
+            "Images/VRPlayground/Pic3.png",
+            "Images/VRPlayground/Pic4.png",
+            "Images/VRPlayground/Pic5.png",
         ],
         "description": "A small game made for children in the hospital.",
         "longDescription": `
@@ -234,9 +234,9 @@ export const PROJECTS_MASTER_LIST = [
     {
         "id": "Love-to-Code",
         "title": "Love to code",
-        "cardImage": "Images/LoveToCode/Main.png",
+        "cardImage": "Images/LoveToCode/main.png",
         "images": [
-            "Images/LoveToCode/Main.png",
+            "Images/LoveToCode/main.png",
         ],
         "description": "Solve the puzzles with small code like puzels",
         "longDescription": `
@@ -304,8 +304,8 @@ export const PROJECTS_MASTER_LIST = [
         "title": "Save the Turtles ",
         "cardImage": "Images/SaveTheTurtels/Main.png",
         "images": [
-            "Images/SaveTheTurtels/Pic1.png", 
-            "Images/SaveTheTurtels/Pic2.png",
+            "Images/SaveTheTurtels/pic1.png", 
+            "Images/SaveTheTurtels/pic2.png",
             "Images/SaveTheTurtels/Main.png"
         ],
         "description": "Collect the trash and clean up the ocean so the turels can swim freely",
@@ -388,11 +388,11 @@ export const PROJECTS_MASTER_LIST = [
     {
         "id": "DirectX-render",
         "title": "DirectX Render",
-        "cardImage": "images/DirectX/Main.png",
+        "cardImage": "Images/DirectX/Main.png",
         "images": [
-            "images/DirectX/Main.png", 
-            "images/DirectX/Pic1.png",
-            "images/DirectX/Pic3.png"
+            "Images/DirectX/Main.png", 
+            "Images/DirectX/Pic1.png",
+            "Images/DirectX/Pic3.png"
         ],
         "description": "A small project graphics project made with OpenGL.",
         "longDescription": "For a school assignment, I was tasked with creating a small-scale renderer using OpenGL. I built a renderer capable of displaying 3D models with basic lighting (similar to my software rasterizer project) as well as transparency support.",
@@ -411,7 +411,7 @@ export const PROJECTS_MASTER_LIST = [
         "cardImage": "Images/SoftwareRayTracer/Main.png",
         "images": [
             "Images/SoftwareRayTracer/Main.png",
-            "Images/SoftwareRayTracer/Pic1.png"
+            "Images/SoftwareRayTracer/pic1.png"
         ],
         "description": "A project displaying a small self-made raytracer.",
         "longDescription": `
@@ -433,10 +433,10 @@ export const PROJECTS_MASTER_LIST = [
         "cardImage": "Images/SoftwareRaz/Main.png",
         "images": [
             "Images/SoftwareRaz/Main.png",
-            "Images/SoftwareRaz/pic1.png",
-            "Images/SoftwareRaz/pic2.png",
-            "Images/SoftwareRaz/pic3.png",
-            "Images/SoftwareRaz/pic4.png"
+            "Images/SoftwareRaz/Pic1.png",
+            "Images/SoftwareRaz/Pic2.png",
+            "Images/SoftwareRaz/Pic3.png",
+            "Images/SoftwareRaz/Pic4.png"
         ],
         "description": "Home made rasterizer.",
         "longDescription": `
