@@ -98,12 +98,12 @@ export const PROJECTS_MASTER_LIST = [
     {
         "id": "GOAP-Survival-Agent",
         "title": "GOAP Survival Agent",
-        "cardImage": "Images/GOAPagent/Main.png",
+        "cardImage": "Images/GOAPSurvivalAgent/Main.png",
         "images": [
-            "Images/GOAPagent/Pic1.gif",
-            "Images/GOAPagent/Pic2.gif",
-            "Images/GOAPagent/Pic3.gif",
-            "Images/GOAPagent/Pic4.gif",
+            "Images/GOAPSurvivalAgent/Pic1.gif",
+            "Images/GOAPSurvivalAgent/Pic2.gif",
+            "Images/GOAPSurvivalAgent/Pic3.gif",
+            "Images/GOAPSurvivalAgent/Pic4.gif",z
         ],
         "description": "A agent made to survive as long as posible made with Goal Oriented Action Planning",
         "longDescription": `
