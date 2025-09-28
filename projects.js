@@ -71,7 +71,7 @@ export const PROJECTS_MASTER_LIST = [
     },
     {
         "id": "GOAP-as-A-Framework-for-economic-simulation",
-        "title": "GOAP economic simulations",
+        "title": "GOAP in economic simulations",
         "cardImage": "Images/GoapEconomicGradwork/Pic1.png",
         "images": [
             "Images/GoapEconomicGradwork/Pic1.png",
