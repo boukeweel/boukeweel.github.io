@@ -146,7 +146,7 @@ export const PROJECTS_MASTER_LIST = [
     {
         "id": "playground-vr",
         "title": "PlayGroundVR",
-        "cardImage": "Images/VRPlayground/pic1.jpg",
+        "cardImage": "Images/VRPlayground/Pic1.jpg",
         "images": [
             "Images/VRPlayground/Pic1.png",
             "Images/VRPlayground/Pic2.png",
